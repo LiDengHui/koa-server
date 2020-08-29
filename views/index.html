@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/index.css" />
+    </head>
+
+    <body>
+        <!-- 1. 渲染数据 {{}}  -->
+        <h2>{{datas.appName}}</h2>
+        <a href="/add">添加新任务</a>
+        <hr />
+        <ul>
+            <!-- 2. for 循环 -->
+            {% for task in datas.tasks %}
+
+            <!-- 3. if else 判断 -->
+            {% if task.done %}
+            <li class="{{name}}">
+                <input type="checkbox" checked />
+                {{task.id}} - {{task.title}}
+                <a href="">删除</a>
+            </li>
+
+            {% else %}
+            <li class="{{name}}">
+                <input type="checkbox" />
+                {{task.id}} - {{task.title}}
+                <a href="">删除</a>
+            </li>
+
+            {% endif %} {% endfor %}
+        </ul>
+    </body>
+</html>
