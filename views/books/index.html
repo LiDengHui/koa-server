@@ -126,28 +126,28 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            name="BooksSearch[code]"
+                                            name="code"
                                         />
                                     </td>
                                     <td>
                                         <input
                                             type="text"
                                             class="form-control"
-                                            name="BooksSearch[name]"
+                                            name="name"
                                         />
                                     </td>
                                     <td>
                                         <input
                                             type="text"
                                             class="form-control"
-                                            name="BooksSearch[author]"
+                                            name="author"
                                         />
                                     </td>
                                     <td>
                                         <input
                                             type="text"
                                             class="form-control"
-                                            name="BooksSearch[publisher]"
+                                            name="publisher"
                                         />
                                     </td>
                                     <td>&nbsp;</td>
@@ -1118,7 +1118,7 @@
         <script>
             jQuery(function ($) {
                 jQuery("#w0").yiiGridView({
-                    filterUrl: "\/yii\/web\/index.php?r=books",
+                    filterUrl: "/books",
                     filterSelector: "#w0-filters input, #w0-filters select",
                     filterOnFocusOut: true,
                 });

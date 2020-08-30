@@ -2,7 +2,9 @@ const BooksApi = require("../api");
 const BooksController = {
     async queryBooks(ctx) {
         try {
-            const data = await BooksApi.queryBooks();
+            const query = ctx.query;
+            console.log(query);
+            const data = await BooksApi.queryBooks(query);
             ctx.body = await ctx.render("books/index.html", { data });
         } catch (e) {
             console.error(e);

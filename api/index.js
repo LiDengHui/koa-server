@@ -1,7 +1,9 @@
 const http = require("../utils/http");
 const BooksApi = {
-    queryBooks() {
-        return http.get("/yii/web/books");
+    queryBooks(book) {
+        return http.get("/yii/web/books", {
+            params: book,
+        });
     },
     queryBook(code) {
         return http.get(`/yii/web/books/${code}`);
