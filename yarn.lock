@@ -1230,6 +1230,11 @@ koa-swig@^2.2.1:
     thenify "^3.1.0"
     utils-merge "^1.0.0"
 
+koa2-connect-history-api-fallback@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/koa2-connect-history-api-fallback/download/koa2-connect-history-api-fallback-0.1.2.tgz#5f004fd2344d022e2de3fdca5f13bad23f23af41"
+  integrity sha1-XwBP0jRNAi4t4/3KXxO60j8jr0E=
+
 koa@^2.13.0:
   version "2.13.0"
   resolved "https://registry.npm.taobao.org/koa/download/koa-2.13.0.tgz#25217e05efd3358a7e5ddec00f0a380c9b71b501"
