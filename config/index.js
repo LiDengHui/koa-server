@@ -10,11 +10,9 @@ if (process.env.NODE_ENV === "develoption") {
         cache: false,
     };
     config = { ...config, ...devConfig };
-}
-
-if (process.env.NODE_ENV === "production") {
+} else {
     const proConfig = {
-        port: 80,
+        port: 8080,
         cache: "memory",
     };
     config = { ...config, ...proConfig };
